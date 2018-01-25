@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  padding-top: 50px;
+}
+
+.container-fluid {
+	background: #f7f7f7;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	width: 100%;
+	padding: 0 2em 2em 2em;
+}
+
+form {
+	width: 100%;
+}
+
+input {
+	min-width: 200px;
+}
+
+textarea {
+	min-width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+	button[type='button'], button[type='submit'] {
+		background: #222222;
+		border: none;
+		height: 40px;
+		min-width: 150px;
+		border-radius: 0px;
+	}
+
+	button[type='button']:hover, button[type="submit"]:hover {
+		background: #080808;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	button[type='button']:not(:first-child), button[type='submit'] {
+		background: #222222;
+		border: none;
+		height: 40px;
+		min-width: 150px;
+		border-radius: 0px;
+	}
+
+	button[type='button']:not(:first-child):hover, button[type="submit"]:hover {
+		background: #080808;
+		border: none;
+	}
+}
+
